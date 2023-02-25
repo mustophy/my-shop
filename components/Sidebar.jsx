@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { sidebarRoutes } from '../config/routes'
+import Link from 'next/link'
 
 const Sidebar = () => {
     return (
@@ -23,10 +24,12 @@ const Sidebar = () => {
                             }
                         </div>
                         {
-                            route.subRoutes && showSubroutes &&(
-                                <div className="flex border-l flex-col gap-y-6 mt-5 ml-6 pl-3">
+                            route.subRoutes && showSubroutes && (
+                                <div className="flex border-l-2 flex-col gap-y-6 mt-5 ml-10 pl-4">
                                     {route.subRoutes.map(link => (
-                                        <p>{link.name}</p>
+                                        <Link href={link.url}>
+                                            <p>{link.name}</p>
+                                        </Link>
                                     ))}
                                 </div>
                             )
