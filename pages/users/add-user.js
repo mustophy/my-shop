@@ -7,7 +7,7 @@ const addUser = () => {
     <div>
         <h2 className="text-black mb-[10px] w-[100%] p-[25px] bg-[#FBF9F7]">Basic Information</h2>
         <div className="flex gap-4 items-center p-[25px] pt-[20px]">
-            <img className="h-[50px]" src="assets/add-user/profile.svg" alt='img' />
+            <img className="h-[50px]" src="/assets/add-user/profile.svg" alt='img' />
             <div>
                 <p className="font-bold text-black text-[14px]">Profile Photo</p>
                 <p className="text-[13px]">This will be displayed on your profile</p>
