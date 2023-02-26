@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div className='pl-[218px]'>
       <Sidebar />
-      <div className='ml-[30px] pt-6'>
+      <div className='ml-[30px] py-6 pr-[30px] h-[100vh] flex flex-col'>
         <div className='flex mb-[30px] items-center pl-[30px]'>
           <p className='font-[700] text-[25px] leading-[32px]'>{formattedPath}</p>
           <p className='text-primary ml-1 font-[700] text-[25px] leading-[32px]'>{mainPath}</p>
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
             <input type="text" className='border border-surface-border rounded-[30px] py-3 pl-4 w-[350px]' placeholder='Search anything here...' />
           </div>
         </div>
-        <div className='rounded-lg p-[30px] shadow-shadow1 bg-white'>
+        <div className='rounded-lg shadow-shadow1 bg-white flex-1 '>
           {children}
         </div>
       </div>
