@@ -53,7 +53,7 @@ export const sidebarRoutes = [
     },
     {
         name: 'Invoice',
-        subRoutes: []
+        url: "/invoice"
     },
     {
         name: 'Messages',

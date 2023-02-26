@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   const { pathname } = useRouter()
   const { formattedPath, mainPath } = formatPathname(pathname)
   return (
-    <div className='pl-[218px]'>
+    <div className='pl-[218px] pr-8'>
       <Sidebar />
       <div className='ml-[30px] pt-6'>
         <div className='flex mb-[30px] items-center pl-[30px]'>
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
             <input type="text" className='border border-surface-border rounded-[30px] py-3 pl-4 w-[350px]' placeholder='Search anything here...' />
           </div>
         </div>
-        <div className='rounded-lg p-[30px] shadow-shadow1 bg-white'>
+        <div className=''>
           {children}
         </div>
       </div>
