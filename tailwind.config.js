@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         primary: '#E75EA0',
         secondary: '#F3A522',
+        'input-bg': '#F9F8F9',
         text: {
           'light': '#727272',
           'black': '#000000',
@@ -29,7 +30,8 @@ module.exports = {
         warning: '#F6B445',
       },
       boxShadow: {
-        shadow1: '0px 2px 3px rgba(0, 0, 0, 0.25)'
+        shadow1: '0px 2px 3px rgba(0, 0, 0, 0.25)',
+        shadow2: '0px 0px 4px rgba(0, 0, 0, 0.15)',
       }
     },
   },
