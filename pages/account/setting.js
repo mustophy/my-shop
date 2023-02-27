@@ -210,20 +210,20 @@ const setting = () => {
                 </TitleCard>
                 <div className='mt-[30px]'></div>
                 <TitleCard title="Password & Security" >
-                    <div className='flex gap-[30px] flex-wrap'>
-                    <div className='w-[270px] relative '>
+                    <div className='flex gap-[25px] flex-wrap'>
+                    <div className='w-[260px] relative '>
                         <div className='absolute top-6 text-[20px] left-4'>
                             <img src="/assets/setting/key.svg" alt="" />
                         </div>
                         <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-background' placeholder='Enter Current Password' />
                     </div>
-                    <div className='w-[270px] relative'>
+                    <div className='w-[260px] relative'>
                         <div className='absolute top-6 text-[20px] left-4'>
                             <img src="/assets/setting/key.svg" alt="" />
                         </div>
                         <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-background' placeholder='Enter New Password' />
                     </div>
-                    <div className='w-[270px] relative'>
+                    <div className='w-[260px] relative'>
                         <div className='absolute top-6 text-[20px] left-4'>
                             <img src="/assets/setting/key.svg" alt="" />
                         </div>
