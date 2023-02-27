@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Sidebar = () => {
     return (
-        <div className='w-[218px] px-4 pt-12 flex flex-col gap-y-2 fixed top-0 left-0'>
+        <div className='w-[218px] px-4 pt-12 flex flex-col gap-y-2 fixed top-0 left-0 bg-white h-[100vh]'>
             <img src="/images/logo.svg" className='h-16 w-16 mb-7 mx-auto' alt="" />
             {sidebarRoutes.map(route => {
                 const [showSubroutes, setShowSubroutes] = useState(false)
@@ -13,7 +13,7 @@ const Sidebar = () => {
                     <li className=''>
                         <div onClick={toggleSubroutes} className={`flex cursor-pointer px-4 py-3 rounded-lg items-center ${showSubroutes && 'bg-primary'}`}>
                             <img src={`/assets/sidebar/${route?.name}.svg`} alt="" />
-                            {/* <Link> */}
+                            {/* <Link href={route.url}> */}
                                 <p className={`ml-[10px] ${showSubroutes && 'text-white'}`}>{route.name}</p>
                             {/* </Link> */}
                             {route.subRoutes &&

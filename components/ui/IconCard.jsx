@@ -1,6 +1,6 @@
 export const IconCard = ({ children, className }) => {
   return (
-    <div className={`h-10 w-10 flex rounded-[50%] items-center justify-center ${className}`}>
+    <div className='h-11 w-11 flex items-center justify-center rounded-full bg-surface-background shrink-0'>
         {children}
     </div>
   )
