@@ -1,5 +1,5 @@
 import { FilledButton } from '@/components/ui/Button'
-import { usersProfile } from '@/config/usersProfile'
+import { usersProfile } from '@/data/usersProfile'
 import React from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css';
