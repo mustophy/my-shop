@@ -9,7 +9,20 @@ export const sidebarRoutes = [
     },
     {
         name: 'Users',
-        subRoutes: []
+        subRoutes: [
+            {
+                name: 'Overview',
+                url: '/users/overview'
+            },
+            {
+                name: 'Leaderboard',
+                url: '/users/leaderboard'
+            },
+            {
+                name: 'Add user',
+                url: '/users/add-user'
+            },
+        ]
     },
     {
         name: 'User Profile',
