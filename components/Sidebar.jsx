@@ -13,7 +13,9 @@ const Sidebar = () => {
                     <li className=''>
                         <div onClick={toggleSubroutes} className={`flex cursor-pointer px-4 py-3 rounded-lg items-center ${showSubroutes && 'bg-primary'}`}>
                             <img src={`/assets/sidebar/${route?.name}.svg`} alt="" />
-                            <p className={`ml-[10px] ${showSubroutes && 'text-white'}`}>{route.name}</p>
+                            {/* <Link> */}
+                                <p className={`ml-[10px] ${showSubroutes && 'text-white'}`}>{route.name}</p>
+                            {/* </Link> */}
                             {route.subRoutes &&
                                 <div className='ml-auto'>
                                     {showSubroutes

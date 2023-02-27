@@ -33,3 +33,16 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.inv-grid {
+  grid-template-columns: 75% 25%;
+}
+
+.inv-h4 {
+  @apply font-[500] text-[16px] leading-[24px]
+}
+
+.sm-grey-text {
+  @apply font-[300] text-[14px] leading-[129.1%] text-[#868484]
+}
+
