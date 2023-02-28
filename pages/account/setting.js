@@ -153,8 +153,8 @@ const setting = () => {
                                 <img src="/assets/setting/twitter.svg" className='h-[25px]' alt="" />
                             </div>
                             <div>
-                                <h2>Twitter</h2>
-                                <p>{connectT? 'Not Connected' : 'Connected'}</p>
+                                <h2 className='text-[15px]'>Twitter</h2>
+                                <p className='text-[14px]'>{connectT? 'Not Connected' : 'Connected'}</p>
                             </div>
                         </div>
                         <p className={`cursor-pointer ${connectT? 'text-primary': ''}`}  onClick={()=>setConnectT(!connectT)}>{connectT?'Connect': 'Disconnect'}</p>
@@ -165,8 +165,8 @@ const setting = () => {
                                 <img src="/assets/setting/facebook.svg" className='h-[25px]' alt="" />
                             </div>
                             <div>
-                                <h2>Facebook</h2>
-                                <p>{connectF? 'Not Connected' : 'Connected'}</p>
+                                <h2 className='text-[15px]'>Facebook</h2>
+                                <p className='text-[14px]'>{connectF? 'Not Connected' : 'Connected'}</p>
                             </div>
                         </div>
                         <p className={`cursor-pointer ${connectF? 'text-primary': ''}`}  onClick={()=>setConnectF(!connectF)}>{connectF?'Connect': 'Disconnect'}</p>
@@ -177,8 +177,8 @@ const setting = () => {
                                 <img src="/assets/setting/slack.svg" className='h-[25px]' alt="" />
                             </div>
                             <div>
-                                <h2>Slack</h2>
-                                <p>{connectS? 'Not Connected' : 'Connected'}</p>
+                                <h2 className='text-[15px]'>Slack</h2>
+                                <p className='text-[14px]'>{connectS? 'Not Connected' : 'Connected'}</p>
                             </div>
                         </div>
                         <p className={`cursor-pointer ${connectS? 'text-primary': ''}`}  onClick={()=>setConnectS(!connectS)}>{connectS?'Connect': 'Disconnect'}</p>
@@ -189,8 +189,8 @@ const setting = () => {
                                 <img src="/assets/setting/linkedin.svg" className='h-[25px]' alt="" />
                             </div>
                             <div>
-                                <h2>LinkedIn</h2>
-                                <p>{connectI? 'Not Connected' : 'Connected'}</p>
+                                <h2 className='text-[15px]'>LinkedIn</h2>
+                                <p className='text-[14px]'>{connectI? 'Not Connected' : 'Connected'}</p>
                             </div>
                         </div>
                         <p className={`cursor-pointer ${connectI? 'text-primary': ''}`}  onClick={()=>setConnectI(!connectI)}>{connectI?'Connect': 'Disconnect'}</p>
@@ -201,8 +201,8 @@ const setting = () => {
                                 <img src="/assets/setting/google.svg" className='h-[25px]' alt="" />
                             </div>
                             <div>
-                                <h2>Google</h2>
-                                <p>{connectG? 'Not Connected' : 'Connected'}</p>
+                                <h2 className='text-[15px]'>Google</h2>
+                                <p className='text-[14px]'>{connectG? 'Not Connected' : 'Connected'}</p>
                             </div>
                         </div>
                         <p className={`cursor-pointer ${connectG? 'text-primary': ''}`}  onClick={()=>setConnectG(!connectG)}>{connectG?'Connect': 'Disconnect'}</p>
