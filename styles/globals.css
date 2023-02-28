@@ -38,6 +38,10 @@ a {
   grid-template-columns: 75% 25%;
 }
 
+.use-grid {
+  grid-template-columns: 70% 1fr;
+}
+
 .inv-h4 {
   @apply font-[500] text-[16px] leading-[24px]
 }

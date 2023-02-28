@@ -3,7 +3,7 @@ import { useState } from "react"
 export const SelectInput = ({ label, placeholder="Select", children, className }) => {
     const [selected, setSelected] = useState(placeholder)
     return (
-        <div className={className}>
+        <div className={`${className}`}>
             <span className='font-[400] block mb-[10px]'>{label}</span>
             <div className="px-4 pt-[13px] pb-[14px] rounded-lg border border-surface-border bg-input-bg flex justify-between items-center relative">
                 <p>{selected}</p>
