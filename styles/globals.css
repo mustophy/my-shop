@@ -42,6 +42,10 @@ a {
   @apply font-[500] text-[16px] leading-[24px]
 }
 
+.lead-grid {
+  grid-template-columns: 24% 16% 16% 18% 20% 6%;
+}
+
 .sm-grey-text {
   @apply font-[300] text-[14px] leading-[129.1%] text-[#868484]
 }
