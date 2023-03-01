@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   const { pathname } = useRouter()
   const { formattedPath, mainPath } = formatPathname(pathname)
   return (
-    <div className='pl-[218px] pr-8'>
+    <div className='pl-4 pr-4 sm:pl-[218px] sm:pr-8'>
       <Sidebar />
       <div className='ml-[30px] py-6 pr-[30px] h-[100vh] flex flex-col'>
         <div className='flex mb-[30px] items-center pl-[30px]'>

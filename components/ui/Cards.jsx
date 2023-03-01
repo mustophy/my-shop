@@ -1,3 +1,4 @@
+import { Avatar } from "./Avatar"
 import { Rating } from "./Rating"
 
 export const TitleCard = ({ children, title, subtitle, className }) => {
@@ -28,7 +29,7 @@ export const DotTitleCard = ({ children, title, className }) => {
     )
 }
 
-export const TeamCard = ({ team, outline=false, outlinePosition="bottom", className }) => {
+export const TeamCard = ({ team, outline = false, outlinePosition = "bottom", className }) => {
     const borderPosition = outlinePosition === "bottom" ? 'border-b-4' : 'border-t-4'
     return (
         <div className={`py-7 px-4 border-surface-border rounded-lg ${outline && `${borderPosition} border-primary`} border relative ${className}`}>
@@ -52,9 +53,9 @@ export const TeamCard = ({ team, outline=false, outlinePosition="bottom", classN
 }
 
 export const Card = ({ children, outline = false, outlinePosition = "bottom", className }) => {
-    const borderPosition = outlinePosition === "bottom" ? 'border-b-4' : 'border-t-4'
+    const borderPosition = outlinePosition === "bottom" ? 'border-b-4 border-b-primary' : 'border-t-4 border-t-primary'
     return (
-        <div className={`py-7 px-4 border-surface-border rounded-lg ${outline && `${borderPosition} border-primary`} border relative ${className}`}>
+        <div className={`py-7 px-4 border-surface-border rounded-lg ${outline && `${borderPosition}`} border relative ${className}`}>
             {children}
         </div>
     )
@@ -129,6 +130,36 @@ export const ConnectionCard = ({ user }) => {
                         : 'Connect'
                     }
                 </p>
+            </div>
+        </div>
+    )
+}
+
+export const ChatCard = ({ contact }) => {
+    return (
+        <div className="flex">
+            <Avatar src="/images/user.png" />
+            <div className="ml-4">
+                <p className="font-semibold">Killan James</p>
+                <span className="">Hello world</span>
+            </div>
+            <div className="ml-auto flex flex-col text-right">
+                <span className="text-sm">4:30 PM</span>
+                <span className="p-1 text-xs">2</span>
+            </div>
+        </div>
+    )
+}
+
+export const MessageCard = ({ message, isUser=false }) => {
+    return (
+        <div className={`flex gap-x-[14px] ${isUser && 'flex-row-reverse'}`}>
+            <Avatar src="/images/user.png" />
+            <div className="max-w-[50%]">
+                <p className="px-[14px] py-[10px] mb-2 bg-surface-background text-sm rounded-l-lg">Hi, I hope you are doing well, yesterday you have gave a pen This
+                    very nice, i am very happy for this.yesterday you have gave
+                    a pen This very nice</p>
+                <span className="text-sm block text-right">4:30</span>
             </div>
         </div>
     )

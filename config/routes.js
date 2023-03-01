@@ -19,7 +19,7 @@ export const sidebarRoutes = [
                 url: '/users/leaderboard'
             },
             {
-                name: 'Overview',
+                name: 'Add User',
                 url: '/users/add-user'
             },
         ]
@@ -85,7 +85,16 @@ export const sidebarRoutes = [
                 name: 'Orders',
                 subRoutes: [
                     {
-
+                        name: 'Orders',
+                        url: '/e-commerce/orders/'
+                    },
+                    {
+                        name: 'Order Details',
+                        url: '/e-commerce/orders/order-details/'
+                    },
+                    {
+                        name: 'Add order',
+                        url: '/e-commerce/orders/add-order/'
                     }
                 ]
             },
@@ -123,7 +132,7 @@ export const sidebarRoutes = [
     },
     {
         name: 'Calendar',
-        subRoutes: []
+        url: '/calendar'
     },
     {
         name: 'Invoice',

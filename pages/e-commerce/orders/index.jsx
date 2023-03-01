@@ -1,8 +1,8 @@
 
 const orders = () => {
     return (
-        <div className="h-full flex flex-col">
-            <div className="grid grid-cols-6 p-[30px] shadow-shadow1">
+        <div className="h-full flex flex-col bg-white shadow-shadow1">
+            <div className="grid grid-cols-6 p-[30px] bg-surface-accent">
                 <p className="text-black text-xl font-semibold">Order</p>
                 <p className="text-black text-xl font-semibold">Date</p>
                 <p className="text-black text-xl font-semibold">Customer</p>

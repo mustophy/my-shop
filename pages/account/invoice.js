@@ -5,7 +5,7 @@ import React from 'react'
 
 const invoice = () => {
     return (
-        <div className='grid grid-cols-8 gap-x-[30px] h-full overflow-auto'>
+        <div className='grid p-[30px] bg-white grid-cols-8 gap-x-[30px] h-full overflow-auto'>
             <div className="col-span-5">
                 <TitleCard title="Invoice" subtitle="Create new invoice">
                     <div className="flex justify-between">

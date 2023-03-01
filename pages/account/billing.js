@@ -1,10 +1,11 @@
+import CustomLineChart from '@/charts/CustomLineChart'
 import { Card, TitleCard } from '@/components/ui/Cards'
 import { TextInput } from '@/components/ui/TextInput'
 import React from 'react'
 
 const billing = () => {
     return (
-        <div className='flex gap-x-10 h-full p-[30px]'>
+        <div className='flex gap-x-10 h-full p-[30px] bg-white'>
             <div className="w-[262px]">
                 <div className='relative'>
                     <svg className='absolute text-red-500 top-5 left-4' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
