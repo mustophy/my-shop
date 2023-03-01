@@ -115,6 +115,10 @@ export const sidebarRoutes = [
     {
         name: 'Projects',
         subRoutes: [
+            {
+                name: 'Overview',
+                url: '/projects/overview'
+            }
         ]
     },
     {
