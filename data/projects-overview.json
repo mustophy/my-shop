@@ -1,0 +1,9 @@
+[
+    {"avatar": "1", "title": "Update Subscription method", "subtitle": "Updated 2 hour ago", "tasks": 5, "members": ["1", "2", "3", "4"], "files": 5, "status": "Completed", "completion": "cpl1"},
+    {"avatar": "2", "title": "Update Social banners", "subtitle": "Updated 1 week ago", "tasks": 5, "members": ["1", "2", "3", "4", "5"], "files": 8, "status": "Completed", "completion": "cpl1"},
+    {"avatar": "3", "title": "Install Front pay", "subtitle": "Updated 20 hour ago", "tasks": 5, "members": [], "files": 2, "status": "To Do", "completion": "todo"},
+    {"avatar": "4", "title": "Extend product features", "subtitle": "Updated 23 hour ago", "tasks": 5, "members": ["1",  "3", "5"], "files": 20, "status": "In progress", "completion": "progress1"},
+    {"avatar": "5", "title": "New products for customer", "subtitle": "Updated 2 hour ago", "tasks": 5, "members": ["1", "2", "3", "4", "5"], "files": 5, "status": "In progress", "completion": "progress2"},
+    {"avatar": "6", "title": "Improve user profile", "subtitle": "Updated 20 hour ago", "tasks": 5, "members": ["1", "2", "3", "4"], "files": 30, "status": "Completed", "completion": "cpl1"},
+    {"avatar": "7", "title": "Secure your account", "subtitle": "Updated 21 hour ago", "tasks": 5, "members": ["1", "6", "5", "2", "3", "4"], "files": 13, "status": "In progress", "completion": "progress3"}
+]
