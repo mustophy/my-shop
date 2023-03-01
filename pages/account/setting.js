@@ -11,7 +11,7 @@ const setting = () => {
     const [connectG, setConnectG] = useState(true)
     const [connectS, setConnectS] = useState(true)
   return (
-    <div className='flex gap-x-10 h-full p-[30px] bg-white'> 
+    <div className='flex flex-col md:flex-row gap-x-10 h-full p-[30px] bg-white'> 
         <div className="w-[262px]">
             <div className='relative'>
                 <svg className='absolute top-5 left-4' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,19 +211,19 @@ const setting = () => {
                 <div className='mt-[30px]'></div>
                 <TitleCard title="Password & Security" >
                     <div className='flex gap-y-[25px] gap-x-[50px] flex-wrap'>
-                    <div className='w-[260px] relative '>
+                    <div className='w-full xl:w-[45%] relative '>
                         <div className='absolute top-6 text-[20px] left-4'>
                             <img src="/assets/setting/key.svg" alt="" />
                         </div>
                         <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-accent' placeholder='Enter Current Password' />
                     </div>
-                    <div className='w-[260px] relative'>
+                    <div className='w-full xl:w-[45%] relative'>
                         <div className='absolute top-6 text-[20px] left-4'>
                             <img src="/assets/setting/key.svg" alt="" />
                         </div>
                         <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-accent' placeholder='Enter New Password' />
                     </div>
-                    <div className='w-[260px] relative'>
+                    <div className='w-full xl:w-[45%] relative'>
                         <div className='absolute top-6 text-[20px] left-4'>
                             <img src="/assets/setting/key.svg" alt="" />
                         </div>
@@ -246,9 +246,9 @@ const setting = () => {
                         <input type='checkbox' className='mr-[7px]' />
                         <p className='text-[12px]'>Confirm that I want to delete my account</p>
                     </div>
-                    <div className='flex justify-end mt-[35px] mb-[10px] mr-[25px]'>
+                    <div className='flex flex-col gap-[15px] md:flex-row justify-start md:justify-end mt-[35px] mb-[10px] mr-[25px]'>
                         <OutlineButton className='px-[35px]'>Learn more</OutlineButton>
-                        <FilledButton className='bg-red-600 ml-[30px]'>Delete</FilledButton>
+                        <FilledButton className='bg-red-600 '>Delete</FilledButton>
                     </div>
                 </TitleCard>
             </div>
