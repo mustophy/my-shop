@@ -95,8 +95,8 @@ const Overview = () => {
                       <div className='h-[20px] text-[10px] flex items-center justify-center text-primary w-[20px] rounded-full absolute left-[30px] bg-surface-background'>+{project.members.length -2}</div>
                     </div>}  
 
-                    {(project.members.length < 5 && project.members.length > 0 ) && project.members.map( (mem, i)  =>(
-                      <img key={i} className={`h-[20px] absolute left-[${15 * i}px] `} src={`/assets/projects/mem${mem}.svg`} alt="" />
+                    {(project.members.length <= 4 && project.members.length > 0 ) && project.members.map( (mem, i)  =>(
+                      <img key={i} className={`h-[20px] absolute left-[${i * 15}px] `} src={`/assets/projects/mem${mem}.svg`} alt="" />
                     ))}
 
                     {(project.members.length == 0) && <p className='text-[13px] mt-[15px]'>No Assignee</p> }
