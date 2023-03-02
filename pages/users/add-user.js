@@ -1,11 +1,12 @@
 import { FilledButton } from "@/components/ui/Button"
+import { TitleCard } from "@/components/ui/Cards"
 import IconInput from "@/components/ui/IconInput"
 
 
 const addUser = () => {
   return (
-    <div>
-        <h2 className="text-black mb-[10px] w-[100%] p-[25px] bg-[#FBF9F7]">Basic Information</h2>
+    <div className="shadow-shadow1 bg-white pb-[10px] mb-[30px]">
+        <h2 className="text-black mb-[10px] w-[100%] p-[25px] bg-surface-background">Basic Information</h2>
         <div className="flex gap-4 items-center p-[25px] pt-[20px]">
             <img className="h-[50px]" src="/assets/add-user/profile.svg" alt='img' />
             <div>

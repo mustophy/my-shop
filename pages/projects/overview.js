@@ -4,8 +4,8 @@ import Data from '@/data/projects-overview.json'
 const Overview = () => {
   return (
     <div>
-      <div className='flex justify-between'>
-        <div className='flex items-center rounded-lg p-[15px] shadow-shadow2 bg-white w-[28%] justify-between'>
+      <div className='sm:flex justify-between'>
+        <div className='flex items-center rounded-lg p-[15px] shadow-shadow2 bg-white sm:w-[28%] justify-between mb-6 sm:mb-0'>
           <div>
             <p className='font-bold'>Total Projects</p>
             <p className='text-primary font-bold'>65</p>
@@ -15,34 +15,34 @@ const Overview = () => {
             <img src='/assets/projects/chart1.svg' alt='' />
           </div>
         </div>
-        <div className='w-[70%] flex justify-between rounded-lg p-[15px] shadow-shadow2 bg-white'>
-          <div className='flex gap-6 items-center'>
+        <div className='sm:w-[70%] flex justify-between rounded-lg p-[15px] shadow-shadow2 bg-white'>
+          <div className='sm:flex gap-1 sm:gap-6 items-center'>
             <div>
               <p className='font-bold'>To do</p>
               <p className='text-primary font-bold'>10</p>
               <p className='text-[12.5px]'>Month of August</p>
             </div>
-            <div>
+            <div className='mt-3 sm:mt-0'>
               <img src='/assets/projects/chart2.svg' alt='' />
             </div>
           </div>
-          <div className='flex gap-6 items-center'>
+          <div className='sm:flex gap-1 sm:gap-6 items-center'>
             <div>
               <p className='font-bold'>In progress</p>
               <p className='text-primary font-bold'>15</p>
               <p className='text-[12.5px]'>Month of August</p>
             </div>
-            <div>
+            <div className='mt-3 sm:mt-0'>
               <img src='/assets/projects/chart3.svg' alt='' />
             </div>
           </div>
-          <div className='flex gap-6 items-center'>
+          <div className='sm:flex gap-1 sm:gap-6 items-center'>
             <div>
               <p className='font-bold'>Completed</p>
               <p className='text-primary font-bold'>60</p>
               <p className='text-[12.5px]'>Month of August</p>
             </div>
-            <div>
+            <div className='mt-3 sm:mt-0'>
               <img src='/assets/projects/chart4.svg' alt='' />
             </div>
           </div>
@@ -65,12 +65,12 @@ const Overview = () => {
         </div>
         <div className='rounded-lg  shadow-shadow2 bg-white'>
           <div className='flex p-[15px] bg-surface-background font-bold'>
-            <p className='font-bold w-[28%]'>Projects</p>
-            <p className='font-bold w-[12%]'>Tasks</p>
-            <p className='font-bold w-[15%]'>Members</p>
-            <p className='font-bold w-[15%]'>Status</p>
-            <p className='font-bold w-[15%]'>Completion</p>
-            <p className='font-bold w-[15%]'>Files</p>
+            <p className='text-[12.8px] sm:text-[15px] font-bold w-[20%] sm:w-[28%]'>Projects</p>
+            <p className='text-[12.8px] sm:text-[15px] font-bold w-[10%] sm:w-[12%]'>Tasks</p>
+            <p className='text-[12.8px] sm:text-[15px] font-bold w-[18%] sm:w-[15%]'>Members</p>
+            <p className='text-[12.8px] sm:text-[15px] font-bold w-[17%] sm:w-[15%]'>Status</p>
+            <p className='text-[12.8px] sm:text-[15px] font-bold w-[20%] sm:w-[15%]'>Completion</p>
+            <p className='text-[12.8px] sm:text-[15px] font-bold w-[10%] sm:w-[15%]'>Files</p>
             <div />
           </div>
 
@@ -78,14 +78,14 @@ const Overview = () => {
             {
               Data.map((project, index)=> (
                 <div className='flex items-center mb-[20px]'>
-                  <div className='flex gap-2 items-center w-[28%]'>
+                  <div className='sm:flex gap-2 items-center w-[20%] sm:w-[28%]'>
                     <img src={`/assets/projects/avatar${project.avatar}.svg`} alt="" />
                     <div>
                       <p className='text-[11.8px] font-bold'>{project.title}</p>
                       <p className='text-[10px]'>{project.subtitle}</p>
                     </div>
                   </div>
-                  <p className='w-[12%] pl-[15px]'>{project.tasks}</p>
+                  <p className='w-[10%] sm:w-[12%] pl-[15px]'>{project.tasks}</p>
                   <div className='flex w-[15%] relative mt-[-15px]'>
                     
                     { (project.members.length > 4) &&
@@ -102,20 +102,20 @@ const Overview = () => {
                     {(project.members.length == 0) && <p className='text-[13px] mt-[15px]'>No Assignee</p> }
 
                   </div>
-                  <div className='flex w-[15%] gap-[10px] items-center'>
+                  <div className='flex w-[23%] sm:w-[15%] gap-[10px] items-center'>
                     {(project.status == "Completed") && <div className='h-[8px] w-[8px] bg-[#0AA699] rounded-full' />}
                     {(project.status == "To Do") && <div className='h-[8px] w-[8px] bg-[#B6E4E0] rounded-full' />}
                     {(project.status == "In progress") && <div className='h-[8px] w-[8px] bg-primary rounded-full' />}
                     <p className='text-[13px]'>{project.status}</p>
                   </div>
-                  <div className='w-[15%]'>
-                      <img src={`/assets/projects/${project.completion}.svg`} alt="" />
+                  <div className='w-[17%] sm:w-[15%]'>
+                      <img className='max-w-[80%]' src={`/assets/projects/${project.completion}.svg`} alt="" />
                   </div>
-                  <div className='flex gap-2 w-[8%] items-center'>
+                  <div className='flex gap-2 w-[10%] sm:w-[8%] items-center'>
                     <img className='h-[16px]' src="/assets/projects/file.svg" alt="" />
                     <p className='text-[12px]'>{project.files}</p>
                   </div>
-                  <div>
+                  <div className='w-[5%]'>
                     <img src="/assets/projects/more.svg" alt="" />
                   </div>
                 </div>
