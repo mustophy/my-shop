@@ -1,6 +1,6 @@
 import { FilledButton } from "@/components/ui/Button"
 import { TitleCard } from "@/components/ui/Cards"
-import IconInput from "@/components/ui/IconInput"
+import { IconInput } from "@/components/ui/IconInput"
 
 
 const addUser = () => {

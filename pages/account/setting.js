@@ -1,6 +1,6 @@
 import { FilledButton, OutlineButton } from '@/components/ui/Button'
 import { TitleCard } from '@/components/ui/Cards'
-import IconInput from '@/components/ui/IconInput'
+import { IconInput2 } from '@/components/ui/IconInput'
 import { SwitchBtn } from '@/components/ui/Switch'
 import React, { useState } from 'react'
 
@@ -55,12 +55,12 @@ const setting = () => {
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-between w-full gap-[20px]">
-                        <IconInput placeholder='March David'label='Name' img='/assets/add-user/name.svg' />
-                        <IconInput placeholder='David123@gmail.com'label='Email Address' img='/assets/add-user/email.svg' />
-                        <IconInput placeholder='Male'label='Gender' img='/assets/add-user/gender.svg' />
-                        <IconInput placeholder='9/11/1985'label='Date of Birth' img='/assets/add-user/date.svg' />
-                        <IconInput placeholder='Account'label='Department' img='/assets/add-user/depart.svg' />
-                        <IconInput placeholder='Berlin, Germany'label='Live' img='/assets/add-user/live.svg' />
+                        <IconInput2 placeholder='March David'label='Name' img='/assets/add-user/name.svg' />
+                        <IconInput2 placeholder='David123@gmail.com'label='Email Address' img='/assets/add-user/email.svg' />
+                        <IconInput2 placeholder='Male'label='Gender' img='/assets/add-user/gender.svg' />
+                        <IconInput2 placeholder='9/11/1985'label='Date of Birth' img='/assets/add-user/date.svg' />
+                        <IconInput2 placeholder='Account'label='Department' img='/assets/add-user/depart.svg' />
+                        <IconInput2 placeholder='Berlin, Germany'label='Live' img='/assets/add-user/live.svg' />
                     </div>
                     <div className="flex justify-end mt-[35px] mb-[10px] mr-[25px]">
                         <FilledButton>Update</FilledButton>
