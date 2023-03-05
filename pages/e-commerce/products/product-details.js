@@ -12,7 +12,7 @@ const ProductDetails = () => {
         <Card className='flex justify-between items-center mb-[30px] '>
             <div className='space-y-[18px]'>
                 <p>Products/<span className='text-primary'>Products details</span></p>
-                <h1>Tiro track jacket</h1>
+                <h2>Tiro track jacket</h2>
                 <div className='flex space-x-5'>
                     <div className='flex space-x-[10px]'>
                         <div className='h-[18px] w-[18px]'>
@@ -39,12 +39,12 @@ const ProductDetails = () => {
             </div>
         </Card>
 
-        <div className='grid use-grid gap-x-[35px]'>
+        <div className='grid gap-x-[35px]'>
             <div className=''>
                 <div className='mb-[30px]'>
                     <TitleCard title='Product information' className='border'>
                         <div>
-                            <div className='grid grid-cols-2 gap-x-2'>
+                            <div className='grid sm:grid-cols-2 gap-x-2'>
                                 <TextInput label="Name" placeholder="Malik Ali" />
                                 <TextInput label="SKU" placeholder="1252790" />
                             </div>

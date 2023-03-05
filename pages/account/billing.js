@@ -82,18 +82,18 @@ const billing = () => {
                     </TitleCard>
                     <div className='mt-[30px]'></div>
                     <TitleCard title="Order History">
-                        <div className="grid grid-cols-5 mb-4">
-                            <p className='text-black font-semibold text-lg'>Date</p>
-                            <p className='text-black font-semibold text-lg'>Order No</p>
-                            <p className='text-black font-semibold text-lg'>Invoice</p>
-                            <p className='text-black font-semibold text-lg'>Amount</p>
-                            <p className='text-black font-semibold text-lg'>Status</p>
+                        <div className="grid grid-cols-4 sm:grid-cols-5 mb-4">
+                            <p className='text-black sm:font-semibold text-lg'>Date</p>
+                            <p className='text-black sm:font-semibold text-lg'>Order No</p>
+                            <p className='hidden sm:block text-black sm:font-semibold text-lg'>Invoice</p>
+                            <p className='text-black sm:font-semibold text-lg'>Amount</p>
+                            <p className='text-black sm:font-semibold text-lg'>Status</p>
                         </div>
                         {[0, 1, 1, 1].map(a => (
-                            <div className="grid grid-cols-5 py-6">
+                            <div className="grid grid-cols-4 sm:grid-cols-5 py-6">
                                 <span>20/11/2022</span>
                                 <span>#727272</span>
-                                <span>PDF</span>
+                                <span className='hidden sm:block'>PDF</span>
                                 <span>$250</span>
                                 <div className='flex items-center'>
                                     <div className="h-2 w-2 bg-primary rounded-full"></div>

@@ -42,11 +42,7 @@ export const sidebarRoutes = [
             {
                 name: 'Connections',
                 url: '/user-profile/connections'
-            },
-            {
-                name: 'My profile',
-                url: '/user-profile/my-profile'
-            },
+            }
         ]
     },
     {
@@ -77,8 +73,13 @@ export const sidebarRoutes = [
                 name: 'Products',
                 subRoutes: [
                     {
-
-                    }
+                        name: 'Add Products',
+                        url: '/e-commerce/products/add-products'
+                    },   
+                    {
+                        name: 'Product Details',
+                        url: '/e-commerce/products/product-details'
+                    },
                 ]
             },
             {

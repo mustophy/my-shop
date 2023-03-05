@@ -12,7 +12,7 @@ const connections = () => {
                     <span>markdavid@gmail.com</span>
                 </div>
                 </div>
-                <div className="flex items-center ml-auto mb-[30px] mt-3 sm:mt-0">
+                <div className="hidden sm:flex items-center ml-auto mb-[30px] mt-3 sm:mt-0">
                     <img src="/assets/sidebar/Calendar.svg" className="hidden sm:block" alt="" />
                     <p className='ml-[50px] sm:ml-3'>Join February, 2021</p>
                 </div>

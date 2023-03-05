@@ -18,7 +18,7 @@ body {
 }
 
 h2{
-  @apply font-[500] text-[18px] leading-[23px] text-text-black
+  @apply sm:font-[500] text-[18px] leading-[23px] text-text-black
 }
 
 span{
@@ -42,16 +42,8 @@ a {
   grid-template-columns: 75% 25%;
 }
 
-.use-grid {
-  grid-template-columns: 70% 1fr;
-}
-
 .inv-h4 {
   @apply font-[500] text-[16px] leading-[24px]
-}
-
-.lead-grid {
-  grid-template-columns: 24% 16% 16% 18% 20% 6%;
 }
 
 .sm-grey-text {

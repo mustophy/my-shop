@@ -91,7 +91,7 @@ export const ProjectCard = ({ children, project }) => {
             </div>
             <div className="flex mt-4 mb-12">
                 <img src="/assets/sidebar/calendar.svg" alt="" />
-                <span className="ml-[10px]">{project.team}</span>
+                <span className="sm:ml-[10px]">{project.team}</span>
             </div>
             <div className="flex items-center">
                 <img className="cursor-pointer" src="/assets/file.svg" alt="" />

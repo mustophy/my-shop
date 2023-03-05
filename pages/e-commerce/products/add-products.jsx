@@ -5,7 +5,7 @@ import { SelectInput } from "@/components/ui/SelectInput"
 import { TextInput } from "@/components/ui/TextInput"
 const AddProducts = () => {
     return (
-        <div className='p-[30px] rounded-lg'>
+        <div className='bg-white p-4 sm:p-[30px] rounded-lg'>
             <Card>
                 <p>Products / <span className="text-primary">Add products</span></p>
                 <div className="flex justify-between items-center">
@@ -22,7 +22,7 @@ const AddProducts = () => {
                     <p className="ml-3">Preview</p>
                 </div>
             </Card>
-            <div className="mt-[30px] grid grid-cols-3 gap-x-[35px]">
+            <div className="mt-[30px] sm:grid grid-cols-3 gap-x-[35px]">
                 <div className="col-span-2 grid gap-y-[30px]">
                     <TitleCard title="Product Information">
                         <div className="grid grid-cols-2 gap-x-4">
@@ -41,8 +41,8 @@ const AddProducts = () => {
                             <IconCard>
                                 <img src="/assets/camera.svg" alt="" />
                             </IconCard>
-                            <div className="flex-1 grid grid-cols-3 gap-x-4">
-                                <TextInput placeholder="Enter size" />
+                            <div className="flex-1 sm:grid grid-cols-3 gap-x-4">
+                                <TextInput className="w-full" placeholder="Enter size" />
                             </div>
                         </div>
                     </TitleCard>

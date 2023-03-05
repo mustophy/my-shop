@@ -13,7 +13,7 @@ const teams = () => {
           <p>Mark David</p>
           <span>markdavid@gmail.com</span>
         </div>
-        <div className="flex items-center ml-auto mb-[30px]">
+        <div className="hidden sm:flex items-center ml-auto mb-[30px]">
           <img src="/assets/sidebar/Calendar.svg" alt="" />
           <p className='ml-3'>Join February, 2021</p>
         </div>
