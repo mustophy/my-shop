@@ -4,11 +4,11 @@ import { Rating } from "./Rating"
 export const TitleCard = ({ children, title, subtitle, className }) => {
     return (
         <div className="h-fit">
-            <div className={`py-6 mb-[30-px] px-[30px] bg-surface-background flex justify-between items-center rounded-t-lg relative ${className}`}>
+            <div className={`py-6 mb-[30-px] px-4 sm:px-[30px] bg-surface-background flex justify-between items-center rounded-t-lg relative ${className}`}>
                 <h2>{title}</h2>
                 <p className="text-primary cursor-pointer">{subtitle}</p>
             </div>
-            <div className={`border-b border-x border-surface-border px-[30px] pt-[30px] pb-[25px] rounded-b-lg ${className}`}>
+            <div className={`sm:border-b sm:border-x border-surface-border sm:px-[30px] pt-[30px] pb-[25px] rounded-b-lg ${className}`}>
                 {children}
             </div>
         </div>
@@ -22,7 +22,7 @@ export const DotTitleCard = ({ children, title, className }) => {
                 <h2>{title}</h2>
                 <img src="/assets/three-dots.svg" alt="" />
             </div>
-            <div className={`border-b border-x border-surface-border p-5 pb-[25px] rounded-b-lg ${className}`}>
+            <div className={`sm:border-b sm:border-x border-surface-border p-5 pb-[25px] rounded-b-lg ${className}`}>
                 {children}
             </div>
         </div>
@@ -55,7 +55,7 @@ export const TeamCard = ({ team, outline = false, outlinePosition = "bottom", cl
 export const Card = ({ children, outline = false, outlinePosition = "bottom", className }) => {
     const borderPosition = outlinePosition === "bottom" ? 'border-b-4 border-b-primary' : 'border-t-4 border-t-primary'
     return (
-        <div className={`py-7 px-4 border-surface-border rounded-lg ${outline && `${borderPosition}`} border relative ${className}`}>
+        <div className={`py-7 px-4 border-surface-border bg-white rounded-lg ${outline && `${borderPosition}`} border relative w-full ${className}`}>
             {children}
         </div>
     )
@@ -63,7 +63,7 @@ export const Card = ({ children, outline = false, outlinePosition = "bottom", cl
 
 export const ProjectSectionCard = ({ children, outline = false, outlinePosition = "bottom", title }) => {
     return (
-        <div className="shadow-shadow2 h-fit pb-[30px]">
+        <div className="sm:shadow-shadow2 h-fit pb-[30px]">
             <div className="px-5 py-4 bg-surface-background flex justify-between">
                 <p className="font-[500] text-black">{title}</p>
                 <svg width="24" className="cursor-pointer" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

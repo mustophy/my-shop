@@ -77,16 +77,16 @@ const Overview = () => {
           <div className='p-[15px] pb-[.2px]'>
             {
               Data.map((project, index)=> (
-                <div className='flex items-center mb-[20px]'>
-                  <div className='sm:flex gap-2 items-center w-[20%] sm:w-[28%]'>
+                <div className='grid grid-cols-9 items-center mb-[20px]'>
+                  <div className='sm:flex gap-2 col-span-3 items-center '>
                     <img src={`/assets/projects/avatar${project.avatar}.svg`} alt="" />
                     <div>
                       <p className='text-[11.8px] font-bold'>{project.title}</p>
                       <p className='text-[10px]'>{project.subtitle}</p>
                     </div>
                   </div>
-                  <p className='w-[10%] sm:w-[12%] pl-[15px]'>{project.tasks}</p>
-                  <div className='flex w-[15%] relative mt-[-15px]'>
+                  <p className='pl-[15px]'>{project.tasks}</p>
+                  <div className='flex relative mt-[-15px]'>
                     
                     { (project.members.length > 4) &&
                     <div>
@@ -96,26 +96,26 @@ const Overview = () => {
                     </div>}  
 
                     {(project.members.length <= 4 && project.members.length > 0 ) && project.members.map( (mem, i)  =>(
-                      <img key={i} className={`h-[20px] absolute left-[${i * 15}px] `} src={`/assets/projects/mem${mem}.svg`} alt="" />
+                      <img key={i} className={`h-[20px] absolute left-[${(i +1) * 15}px] `} src={`/assets/projects/mem${mem}.svg`} alt="" />
                     ))}
 
                     {(project.members.length == 0) && <p className='text-[13px] mt-[15px]'>No Assignee</p> }
 
                   </div>
-                  <div className='flex w-[23%] sm:w-[15%] gap-[10px] items-center'>
+                  <div className='flex gap-[10px] items-center'>
                     {(project.status == "Completed") && <div className='h-[8px] w-[8px] bg-[#0AA699] rounded-full' />}
                     {(project.status == "To Do") && <div className='h-[8px] w-[8px] bg-[#B6E4E0] rounded-full' />}
                     {(project.status == "In progress") && <div className='h-[8px] w-[8px] bg-primary rounded-full' />}
                     <p className='text-[13px]'>{project.status}</p>
                   </div>
-                  <div className='w-[17%] sm:w-[15%]'>
+                  <div className=''>
                       <img className='max-w-[80%]' src={`/assets/projects/${project.completion}.svg`} alt="" />
                   </div>
-                  <div className='flex gap-2 w-[10%] sm:w-[8%] items-center'>
+                  <div className='flex gap-2 items-center'>
                     <img className='h-[16px]' src="/assets/projects/file.svg" alt="" />
                     <p className='text-[12px]'>{project.files}</p>
                   </div>
-                  <div className='w-[5%]'>
+                  <div className=''>
                     <img src="/assets/projects/more.svg" alt="" />
                   </div>
                 </div>

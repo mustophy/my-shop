@@ -6,7 +6,7 @@ import projectData from '@/data/projects.json'
 const teams = () => {
   console.log('hey', projectData)
   return (
-    <div className='p-[30px]'>
+    <div className='p-4 sm:p-[30px] bg-white'>
       <div className="flex mb-[30px]">
         <Avatar src="/images/user.png" />
         <div className='ml-3'>
@@ -19,7 +19,7 @@ const teams = () => {
         </div>
       </div>
       <TitleCard title="Teams" subtitle="Connect +">
-        <div className="grid grid-cols-3 gap-[15px]">
+        <div className="grid sm:grid-cols-3 gap-[15px]">
             {[0,1,2,3].map(team => (
                 <TeamCard />
             ))}

@@ -20,22 +20,23 @@ export default Sidebar
 const RouteRecursion = ({ route, firstLevel = true, active, setActive }) => {
     const { pathname } = useRouter()
     const [showSubroutes, setShowSubroutes] = useState(false)
+    let activeTopLink = false
     const toggleSubroutes = (name) => {
         if (firstLevel === true) {
             setActive(name)
         }
         setShowSubroutes(!showSubroutes)
     }
-    const topDivClassName = showSubroutes && firstLevel && active === route.name ? 'bg-primary' : ''
-    const topLinkClassName = showSubroutes && firstLevel && active === route.name ? 'text-white' : ''
+
+    if(isActiveLink(pathname, route)) activeTopLink = true
     return (
         <li className=''>
-            <Link href={`${route.subRoutes ? '/#' : route.url}`}>
-                <div onClick={() => toggleSubroutes(route?.name)} className={`flex cursor-pointer px-4 py-3 rounded-lg items-center ${topDivClassName}`}>
+            <Link href={`${route.subRoutes ? '' : route.url}`}>
+                <div onClick={() => toggleSubroutes(route?.name)} className={`flex cursor-pointer px-4 py-3 rounded-lg items-center ${activeTopLink && 'bg-primary'}`}>
                     {firstLevel &&
-                        <img src={`/assets/sidebar/${route?.name}.svg`} alt="" />
+                        <img className={`${activeTopLink && 'make-white'}`} src={`/assets/sidebar/${route?.name}.svg`} alt="" />
                     }
-                    <p className={`ml-[10px] ${topLinkClassName}`}>{route.name}</p>
+                    <p className={`ml-[10px] ${activeTopLink && 'text-white'}`}>{route.name}</p>
                     {route.subRoutes &&
                         <div className='ml-auto shrink-0'>
                             {showSubroutes
@@ -70,6 +71,14 @@ const RouteRecursion = ({ route, firstLevel = true, active, setActive }) => {
 }
 
 const isActiveLink = (pathname, route) => {
-    const divisions = pathname.split("/")
-    return route.toLowerCase() === (divisions[divisions.length - 1]).toLowerCase()
+    if(!route && !route?.subRoutes) return false
+    if(route.subRoutes) {
+        let returnValue = false
+        route.subRoutes.forEach(rt =>{
+            if(rt.url === pathname) returnValue = true
+        })
+        return returnValue
+    } else {
+        return route.url === pathname
+    }
 }

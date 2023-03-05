@@ -18,11 +18,11 @@ body {
 }
 
 h2{
-  @apply font-[500] text-[18px] leading-[23px]
+  @apply font-[500] text-[18px] leading-[23px] text-text-black
 }
 
 span{
-  @apply text-[12.64px] leading-[19px]
+  @apply text-[12.64px] leading-[19px] text-[#868484]
 }
 
 p{
@@ -32,6 +32,10 @@ p{
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.make-white {
+  filter: brightness(0) invert(1);
 }
 
 .inv-grid {
@@ -58,3 +62,6 @@ a {
   grid-template-columns: 25% 16% 16% 25% 16%;
 }
 
+.mantine-Calendar-day {
+  @apply text-text-light
+}

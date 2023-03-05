@@ -1,5 +1,5 @@
 import { IconCard } from '@/components/ui/IconCard'
-import React from 'react'
+import { Calendar } from '@mantine/dates';
 
 const calendar = () => {
     return (
@@ -15,11 +15,16 @@ const calendar = () => {
                     </svg>
                     <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-background' placeholder='Search Event...' />
                 </div>
+                <div className="mt-[30px]">
+                    <Calendar fullWidth={true}/>
+                </div>
                 <div className="flex flex-col gap-y-5 mt-[30px]">
-                    {[0, 1, 2].map(entry => (
+                    {categories.map(category => (
                         <div className="flex items-center">
-                            <IconCard></IconCard>
-                            <p className="ml-4 font-semibold">Events</p>
+                            <IconCard>
+                                {category.icon}
+                            </IconCard>
+                            <p className="ml-4 ">{category.name}</p>
                         </div>
                     ))}
                 </div>
@@ -33,3 +38,26 @@ const calendar = () => {
 
 export default calendar
 
+
+const categories = [
+    {
+        name: 'Events',
+        icon: <img src='/assets/sidebar/Calendar.svg'/>
+    },
+    {
+        name: 'National Holidays',
+        icon: <img src='/assets/coffee.svg'/>
+    },
+    {
+        name: 'Meeting',
+        icon: <img src='/assets/meeting.svg'/>
+    },
+    {
+        name: 'Purchase',
+        icon: <img src='/assets/tag.svg'/>
+    },
+    {
+        name: 'Sales',
+        icon: <img src='/assets/sales.svg'/>
+    },
+]

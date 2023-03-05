@@ -2,26 +2,34 @@
 const orders = () => {
     return (
         <div className="h-full flex flex-col bg-white shadow-shadow1">
-            <div className="grid grid-cols-6 p-[30px] bg-surface-accent">
-                <p className="text-black text-xl font-semibold">Order</p>
-                <p className="text-black text-xl font-semibold">Date</p>
-                <p className="text-black text-xl font-semibold">Customer</p>
-                <p className="text-black text-xl font-semibold">Status</p>
-                <p className="text-black text-xl font-semibold">Payment</p>
-                <p className="text-black text-xl font-semibold">Action</p>
+            <div className="grid grid-cols-3 sm:grid-cols-6 p-4 sm:p-[30px] bg-surface-accent">
+                <div className="grid sm:grid-cols-2">
+                    <p className="text-black text-xl font-semibold">Order</p>
+                    <p className="text-black text-xl font-semibold">Date</p>
+                </div>
+                <div className="grid sm:grid-cols-2 justify-center">
+                    <p className="text-black text-xl font-semibold">Customer</p>
+                    <p className="text-black text-xl font-semibold">Status</p>
+                </div>
+                <p className="text-black text-xl font-semibold hidden sm:block">Payment</p>
+                <p className="text-black text-xl font-semibold text-right">Action</p>
             </div>
-            <div className="grid gap-y-[60px] px-[30px] pt-6 flex-1 overflow-auto">
-                {[0, 0, 1, 2, 3, 4,4,4,4,4,4,4,4].map(order => (
-                    <div className="grid grid-cols-6">
-                        <p>#23456</p>
-                        <p>Nov 20, 2022</p>
-                        <p>Jase Marley</p>
-                        <div className="flex items-center">
-                            <div className="h-3 w-3 bg-secondary rounded-full"></div>
-                            <p className="ml-2">Complete</p>
+            <div className="grid gap-y-[60px] px-4 sm:px-[30px] pt-6 flex-1 overflow-auto">
+                {[0, 0, 1, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4].map(order => (
+                    <div className="grid grid-cols-3 sm:grid-cols-6">
+                        <div className="grid sm:grid-cols-2 sm:col-span-2">
+                            <span>#23456</span>
+                            <span>Nov 20, 2022</span>
                         </div>
-                        <img src="/images/mastercard.png" alt="" />
-                        <p className="text-secondary">View detail</p>
+                        <div className="grid sm:grid-cols-2 justify-center">
+                            <span>Jase Marley</span>
+                            <div className="flex items-center">
+                                <div className="h-3 w-3 bg-secondary rounded-full"></div>
+                                <span className="ml-2">Complete</span>
+                            </div>
+                        </div>
+                        <img className="hidden sm:block" src="/images/mastercard.png" alt="" />
+                        <span className="text-secondary text-right">View detail</span>
                     </div>
                 ))}
             </div>
