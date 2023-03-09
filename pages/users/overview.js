@@ -1,8 +1,8 @@
 import { FilledButton } from '@/components/ui/Button'
 import { usersProfile } from '@/data/usersProfile'
 import React from 'react'
-import { CircularProgressbar } from 'react-circular-progressbar'
-import 'react-circular-progressbar/dist/styles.css';
+// import { CircularProgressbar } from 'react-circular-progressbar'
+// import 'react-circular-progressbar/dist/styles.css';
 
 
 const Overview = () => {
@@ -12,21 +12,21 @@ const Overview = () => {
                 Add User
             </FilledButton>
 
-            <div className='flex justify-between my-[30px]'>
+            <div className='sm:flex justify-between my-[30px]'>
                 <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
                     <div className='mr-[90px]'>
-                        <h4 className='inv-h4'>Total Users</h4>
+                        <h2 className=''>Total Users</h2>
                         <span className='font-bold text-[24px] text-primary leading-[31px] '>50</span>
                         <p className='text-[12px] leading-[16px] '>from 45</p>
                     </div>
                     <div className='w-[55px] h-[55px] '>
-                        <CircularProgressbar 
+                        {/* <CircularProgressbar 
                           styles={{
                             textColor: 'red',
                           }}
                           value="60" 
                           text='60%'
-                        />
+                        /> */}
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ const Overview = () => {
                         <p className='text-[12px] leading-[16px] '>from 45</p>
                     </div>
                     <div className='w-[55px] h-[55px] '>
-                        <CircularProgressbar value="80" text='80%'/>
+                        {/* <CircularProgressbar value="80" text='80%'/> */}
                     </div>
                 </div>
                 <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
@@ -47,7 +47,7 @@ const Overview = () => {
                         <p className='text-[12px] leading-[16px] '>from 45</p>
                     </div>
                     <div className='w-[55px] h-[55px] '>
-                        <CircularProgressbar value="90" text='90%'/>
+                        {/* <CircularProgressbar value="90" text='90%'/> */}
                     </div>
                 </div>
                 <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
@@ -57,7 +57,7 @@ const Overview = () => {
                         <p className='text-[12px] leading-[16px] '>from 45</p>
                     </div>
                     <div className='w-[55px] h-[55px] '>
-                        <CircularProgressbar value="55" text='55%'/>
+                        {/* <CircularProgressbar value="55" text='55%'/> */}
                     </div>
                 </div>
             </div>

@@ -5,8 +5,8 @@ import React from 'react'
 
 const billing = () => {
     return (
-        <div className='flex gap-x-10 h-full p-[30px] bg-white'>
-            <div className="w-[262px]">
+        <div className='flex gap-x-10 h-full p-4 sm:p-[30px] bg-white'>
+            <div className="w-[262px] hidden sm:block">
                 <div className='relative'>
                     <svg className='absolute text-red-500 top-5 left-4' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.625 9H9.0325L8.8225 8.7975C9.58291 7.91552 10.0008 6.78952 10 5.625C10 4.66082 9.71409 3.71829 9.17842 2.9166C8.64275 2.11491 7.88137 1.49007 6.99058 1.12109C6.09979 0.752112 5.11959 0.655571 4.17394 0.843674C3.22828 1.03178 2.35964 1.49608 1.67786 2.17786C0.996076 2.85964 0.531777 3.72828 0.343674 4.67394C0.155571 5.61959 0.252112 6.59979 0.621089 7.49058C0.990067 8.38137 1.61491 9.14275 2.4166 9.67842C3.21829 10.2141 4.16082 10.5 5.125 10.5C6.3325 10.5 7.4425 10.0575 8.2975 9.3225L8.5 9.5325V10.125L12.25 13.8675L13.3675 12.75L9.625 9ZM5.125 9C3.2575 9 1.75 7.4925 1.75 5.625C1.75 3.7575 3.2575 2.25 5.125 2.25C6.9925 2.25 8.5 3.7575 8.5 5.625C8.5 7.4925 6.9925 9 5.125 9Z" fill="#727272" />
@@ -35,8 +35,8 @@ const billing = () => {
             </div>
             <div className="flex-1 overflow-auto">
                 <div className=''>
-                    <TitleCard title="My Address" subtitle="Add new address">
-                        <div className='grid grid-cols-2 gap-x-[30px]'>
+                    <TitleCard title="My Address" subtitle="Add new address" className="px-3">
+                        <div className='grid sm:grid-cols-2 gap-y-[30px] gap-[30px]'>
                             <Card outline={true}>
                                 <h2 className=''>Address 1</h2>
                                 <span className='block mt-3 mb-4'>45 Roker TerraceLatheronwheelKW5 8NW, London</span>
@@ -56,7 +56,7 @@ const billing = () => {
                     </TitleCard>
                     <div className='mt-[30px]'></div>
                     <TitleCard title="Payment Method" subtitle="Add new method">
-                        <div className='grid grid-cols-2 gap-x-[30px]'>
+                        <div className='grid sm:grid-cols-2 gap-[30px]'>
                             <Card outline={true}>
                                 <img src="/assets/delete.svg" className='absolute top-8 right-5 cursor-pointer' alt="" />
                                 <h2 className=''>Master Card</h2>
@@ -82,18 +82,18 @@ const billing = () => {
                     </TitleCard>
                     <div className='mt-[30px]'></div>
                     <TitleCard title="Order History">
-                        <div className="grid grid-cols-5 mb-4">
-                            <p className='text-black font-semibold text-lg'>Date</p>
-                            <p className='text-black font-semibold text-lg'>Order No</p>
-                            <p className='text-black font-semibold text-lg'>Invoice</p>
-                            <p className='text-black font-semibold text-lg'>Amount</p>
-                            <p className='text-black font-semibold text-lg'>Status</p>
+                        <div className="grid grid-cols-4 sm:grid-cols-5 mb-4">
+                            <p className='text-black sm:font-semibold text-lg'>Date</p>
+                            <p className='text-black sm:font-semibold text-lg'>Order No</p>
+                            <p className='hidden sm:block text-black sm:font-semibold text-lg'>Invoice</p>
+                            <p className='text-black sm:font-semibold text-lg'>Amount</p>
+                            <p className='text-black sm:font-semibold text-lg'>Status</p>
                         </div>
                         {[0, 1, 1, 1].map(a => (
-                            <div className="grid grid-cols-5 py-6">
+                            <div className="grid grid-cols-4 sm:grid-cols-5 py-6">
                                 <span>20/11/2022</span>
                                 <span>#727272</span>
-                                <span>PDF</span>
+                                <span className='hidden sm:block'>PDF</span>
                                 <span>$250</span>
                                 <div className='flex items-center'>
                                     <div className="h-2 w-2 bg-primary rounded-full"></div>

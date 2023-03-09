@@ -5,7 +5,7 @@ import React from 'react'
 
 const invoice = () => {
     return (
-        <div className='grid p-[30px] bg-white grid-cols-8 gap-x-[30px] h-full overflow-auto'>
+        <div className='sm:grid p-4 sm:p-[30px] bg-white grid-cols-8 gap-x-[30px] h-full overflow-auto'>
             <div className="col-span-5">
                 <TitleCard title="Invoice" subtitle="Create new invoice">
                     <div className="flex justify-between">
@@ -33,21 +33,15 @@ const invoice = () => {
                         </div>
                     </div>
                     <div className="rounded-lg border border-surface-border mt-[30px]">
-                        <div className="grid grid-cols-5 px-[30px] border-b border-surface-border pt-[23px] pb-[25px]">
-                            <p className="col-span-2 text-black font-semibold text-lg">Item</p>
-                            <p className='text-black font-semibold text-lg'>Quantity</p>
+                        <div className="grid grid-cols-5 px-4 sm:px-[30px] border-b border-surface-border pt-[23px] pb-[25px]">
+                            <p className="col-span-3 sm:col-span-2 text-black font-semibold text-lg">Item</p>
+                            <p className='text-black hidden sm:block font-semibold text-lg'>Quantity</p>
                             <p className='text-black text-center font-semibold text-lg'>Rate</p>
                             <p className='text-right text-black font-semibold text-lg'>Amount</p>
                         </div>
-                        <div className="grid grid-cols-5 pt-[23px] px-[30px] pb-[25px]">
-                            <p className="col-span-2 text-sm font-semibold">Iphone 13 pro</p>
-                            <p className='text-sm font-semibold'>1</p>
-                            <p className='text-sm font-semibold text-center'>15</p>
-                            <p className='text-sm font-semibold text-right'>$250</p>
-                        </div>
-                        <div className="grid grid-cols-5 pt-[23px] px-[30px] pb-[25px]">
-                            <p className="col-span-2 text-sm font-semibold">Iphone 13 pro</p>
-                            <p className='text-sm font-semibold'>1</p>
+                        <div className="grid grid-cols-5 pt-[23px] px-4 sm:px-[30px] pb-[25px]">
+                            <p className="col-span-2 text-sm sm:font-semibold">Iphone 13 pro</p>
+                            <p className='text-sm font-semibold'>x1</p>
                             <p className='text-sm font-semibold text-center'>15</p>
                             <p className='text-sm font-semibold text-right'>$250</p>
                         </div>

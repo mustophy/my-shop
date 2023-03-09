@@ -4,8 +4,8 @@ import { IconCard } from "@/components/ui/IconCard"
 import { Rating } from "@/components/ui/Rating"
 const OrdersDetails = () => {
     return (
-        <div className="bg-white rounded-lg p-[30px] flex flex-col gap-y-[30px]">
-            <Card className="px-[30px]">
+        <div className="bg-white rounded-lg p-4 sm:p-[30px] flex flex-col gap-y-[30px]">
+            <Card className="px-4 sm:px-[30px]">
                 <div className="flex mb-4">
                     <h2>Last Order detail</h2>
                     <div className="flex"></div>
@@ -23,49 +23,27 @@ const OrdersDetails = () => {
                     <img src="/assets/right-arrow.svg" alt="" />
                 </div>
             </Card>
-            <div className="grid grid-cols-3 gap-x-[30px]">
+            <div className="sm:grid grid-cols-3 gap-x-[30px]">
                 <div className="col-span-2 flex flex-col gap-y-[30px]">
                     <TitleCard title="Order details" subtitle="Edit">
-                        <div className="grid grid-cols-2 items-center gap-y-[30px]">
-                            <div className="flex items-center">
-                                <div className="h-[70px] w-[70px] bg-secondary mr-[30px] rounded-md"></div>
-                                <div className="flex flex-col gap-y-[10px]">
-                                    <p className="font-semibold text-black">Laptop Batteries</p>
-                                    <Rating />
-                                    <span>Nov 20, 2022</span>
-                                </div>
-                            </div>
-                            <div className="flex justify-between">
-                                <p className=" font-semibold">$20</p>
-                                <p className=" font-semibold">1</p>
-                                <p className=" font-semibold">$40</p>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="h-[70px] w-[70px] bg-secondary mr-[30px] rounded-md"></div>
-                                <div className="flex flex-col gap-y-[10px]">
-                                    <p className="font-semibold text-black">Laptop Batteries</p>
-                                    <Rating />
-                                    <span>Nov 20, 2022</span>
-                                </div>
-                            </div>
-                            <div className="flex justify-between">
-                                <p className=" font-semibold">$20</p>
-                                <p className=" font-semibold">1</p>
-                                <p className=" font-semibold">$40</p>
-                            </div>
-                            <div className="flex items-center">
-                                <div className="h-[70px] w-[70px] bg-secondary mr-[30px] rounded-md"></div>
-                                <div className="flex flex-col gap-y-[10px]">
-                                    <p className="font-semibold text-black">Laptop Batteries</p>
-                                    <Rating />
-                                    <span>Nov 20, 2022</span>
-                                </div>
-                            </div>
-                            <div className="flex justify-between">
-                                <p className=" font-semibold">$20</p>
-                                <p className=" font-semibold">1</p>
-                                <p className=" font-semibold">$40</p>
-                            </div>
+                        <div className="grid grid-cols-4 sm:grid-cols-2 items-center gap-y-[30px]">
+                            {[0, 1, 2, 3, 4].map(entry => (
+                                <>
+                                    <div className="flex col-span-3 sm:col-span-1 items-center">
+                                        <div className="h-[70px] w-[70px] bg-secondary mr-[30px] rounded-md"></div>
+                                        <div className="flex flex-col gap-y-[10px]">
+                                            <p className="font-semibold text-black">Laptop Batteries</p>
+                                            <Rating />
+                                            <span>Nov 20, 2022</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row items-end gap-y-3 justify-between">
+                                        <p className=" font-semibold">$20</p>
+                                        <p className=" font-semibold">1</p>
+                                        <p className=" font-semibold">$40</p>
+                                    </div>
+                                </>
+                            ))}
                         </div>
                     </TitleCard>
                     <TitleCard title="Shipping activity" subtitle="Edit">
