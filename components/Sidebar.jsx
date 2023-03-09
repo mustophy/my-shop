@@ -26,14 +26,19 @@ const RouteRecursion = ({ route, firstLevel = true, active, setActive }) => {
         }
         setShowSubroutes(!showSubroutes)
     }
-    const topDivClassName = showSubroutes && firstLevel && active === route.name ? 'bg-primary' : ''
-    const topLinkClassName = showSubroutes && firstLevel && active === route.name ? 'text-white' : ''
+    let topDivClassName = ''
+    let topLinkClassName = ''
+    let imgClassName = ''
+    topDivClassName = active === route.name ? 'bg-primary' : ''
+    topLinkClassName = active === route.name ? 'text-white' : ''
+    imgClassName = active === route.name ? 'make-white' : ''
+
     return (
-        <li className=''>
-            <Link href={`${route.subRoutes ? '/#' : route.url}`}>
+        <div className=''>
+            <Link href={`${route.subRoutes ? '' : route.url}`}>
                 <div onClick={() => toggleSubroutes(route?.name)} className={`flex cursor-pointer px-4 py-3 rounded-lg items-center ${topDivClassName}`}>
                     {firstLevel &&
-                        <img src={`/assets/sidebar/${route?.name}.svg`} alt="" />
+                        <img className={imgClassName} src={`/assets/sidebar/${route?.name}.svg`} alt="" />
                     }
                     <p className={`ml-[10px] ${topLinkClassName}`}>{route.name}</p>
                     {route.subRoutes &&
@@ -65,7 +70,7 @@ const RouteRecursion = ({ route, firstLevel = true, active, setActive }) => {
                     })}
                 </div>
             }
-        </li>
+        </div>
     )
 }
 

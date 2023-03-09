@@ -14,7 +14,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  @apply text-text-light text-[14px] leading-[19px] bg-surface-background
+  @apply text-[14px] leading-[19px] bg-surface-background
 }
 
 h2{
@@ -27,6 +27,10 @@ span{
 
 p{
   @apply font-[400] text-[15px] leading-[19px]
+}
+
+.make-white {
+  @apply brightness-0 invert-[1]
 }
 
 a {
@@ -58,3 +62,6 @@ a {
   grid-template-columns: 25% 16% 16% 25% 16%;
 }
 
+.mantine-Calendar-day {
+  @apply text-text-light
+}

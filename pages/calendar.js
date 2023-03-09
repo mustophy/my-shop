@@ -1,5 +1,14 @@
 import { IconCard } from '@/components/ui/IconCard'
-import React from 'react'
+import { Calendar } from '@mantine/dates';
+
+import { makeStyles } from '@mui/material';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+
+// const customStyle = makeStyles(() => ({
+    
+// }))
 
 const calendar = () => {
     return (
@@ -15,6 +24,11 @@ const calendar = () => {
                     </svg>
                     <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-background' placeholder='Search Event...' />
                 </div>
+                <div className="mt-[30px]">
+                    <LocalizationProvider dateAdapter={AdapterDayjs}>
+                        <DateCalendar className='w-full' disableHighlightToday/>
+                    </LocalizationProvider>
+                </div>
                 <div className="flex flex-col gap-y-5 mt-[30px]">
                     {[0, 1, 2].map(entry => (
                         <div className="flex items-center">
@@ -25,7 +39,9 @@ const calendar = () => {
                 </div>
             </div>
             <div className="flex-1">
-
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                    <DateCalendar className='w-full' />
+                </LocalizationProvider>
             </div>
         </div>
     )
