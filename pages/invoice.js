@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/Cards'
 const invoice = () => {
     return (
         <section className='sm:grid grid-cols-7 gap-y-[30px] sm:gap-x-[30px] mb-10 '>
-            <Card className="bg-white sm:col-span-5 shadow-shadow1 sm:px-[30px] py-[30px]">
+            <Card className="bg-[#282729] sm:col-span-5 shadow-shadow1 sm:px-[30px] py-[30px] border-0">
                 <div className='flex justify-between mb-[53px]'>
                     <div>
                         <h2>Dipa Inhouse</h2>
@@ -20,7 +20,7 @@ const invoice = () => {
                     </div>
                 </div>
 
-                <Card className="flex justify-between">
+                <Card className="flex bg-surface-background justify-between border-0">
                     <div>
                         <h2 >Invoice detail</h2>
                         <span className=''>#4581638</span>
@@ -49,15 +49,15 @@ const invoice = () => {
                     <span>Type item for hours item</span>
                 </div>
 
-                <div className='border-2 rounded-lg  mb-[30px]'>
-                    <div className='grid grid-cols-4 inv-h4 border-b-2 bg-surface-background px-5 py-6'>
-                        <p className='text-text-black'>Item</p>
-                        <p className='text-center text-text-black'>Quantity</p>
-                        <p className='text-center text-text-black'>Rate</p>
-                        <p className='text-center text-text-black'>Amount</p>
+                <div className='rounded-lg  mb-[30px]'>
+                    <div className='grid rounded-t-md grid-cols-4 inv-h4 bg-[#403F3F] px-5 py-6'>
+                        <p className='text-white'>Item</p>
+                        <p className='text-center text-white'>Quantity</p>
+                        <p className='text-center text-white'>Rate</p>
+                        <p className='text-center text-white'>Amount</p>
                     </div>
-                    <div className='grid grid-cols-4 justify-between  px-5 py-6'>
-                        <span>iphone 13 pro</span>
+                    <div className='grid grid-cols-4 justify-between bg-surface-background px-5 py-6'>
+                        <span>Iphone 13 pro</span>
                         <span className='text-center'>1</span>
                         <span className='text-center'>5</span>
                         <span className='text-center'>$250</span>
@@ -67,35 +67,35 @@ const invoice = () => {
                 <div className='flex flex-col sm:flex-row gap-y-[30px] justify-between'>
                     <div>
                         <div className='mb-[28px]'>
-                            <div className='flex justify-between'>
-                                <h4 className='inv-h4'>Payment Method</h4>
+                            <div className='flex justify-between mb-[5px]'>
+                                <h2 className='text-white'>Payment Method</h2>
                                 <div className='flex items-center'>
-                                    <span className='text-primary'>Visa</span>
+                                    <span className='text-primary tracking-wider text-[15px]'>Visa</span>
                                     <div className='ml-4'>
-                                        <img src="/assets/sidebar/ArrowDown.svg" alt="arrowDown" />
+                                        <img src="/assets/sidebar/ArrowDown.svg" className='stroke-primary stroke-2' alt="arrowDown" />
                                     </div>
                                 </div>
                             </div>
-                            <p className=''>Pay with your selected method</p>
+                            <span className=''>Pay with your selected method</span>
                         </div>
 
-                        <div className=' bg-[#F7F7F7] sm:w-[340px] rounded-lg p-5 pb-6'>
+                        <div className=' bg-surface-background sm:w-[340px] rounded-lg p-5 pb-6'>
                             <div className='flex justify-between mb-[17px]'>
-                                <p className='text-text-black font-semibold'> Visa Transfer</p>
+                                <p className='text-white font-semibold'> Visa Transfer</p>
                                 <img src="/assets/visa.svg" alt="visa" />
                             </div>
                             <div className='space-y-[10px]'>
                                 <div className='flex space-x-[37px]'>
-                                    <p className=''>AccountName :</p>
-                                    <span>Mark Davidh</span>
+                                    <span className=''>AccountName :</span>
+                                    <span className='text-white'>Mark Davidh</span>
                                 </div>
                                 <div className='flex space-x-[23px]'>
-                                    <p className=''>Account Number:</p>
-                                    <span>3700 1452 4587 2365</span>
+                                    <span className=''>Account Number:</span>
+                                    <span className='text-white'>3700 1452 4587 2365</span>
                                 </div>
                                 <div className='flex space-x-[24px]'>
-                                    <p className=''>Routing Number:</p>
-                                    <span>854781456</span>
+                                    <span className=''>Routing Number:</span>
+                                    <span className='text-white'>854781456</span>
                                 </div>
                             </div>
                         </div>
@@ -123,9 +123,9 @@ const invoice = () => {
             </Card>
 
             <div className='flex mt-[30px] sm:mt-0 flex-col col-span-2 gap-y-[30px]'>
-                <Card>
+                <Card className="bg-surface-gray border-0">
                     <div className='flex items-center justify-between mb-[28px]'>
-                        <p className='text-text-black'>Client Details</p>
+                        <p className='text-white font-semibold text-xl'>Client Details</p>
                         <div className='flex flex-col space-y-[2px]'>
                             <span className='h-[3px] w-[3px] rounded-[100%] bg-[#2D2D2D]'></span>
                             <span className='h-[3px] w-[3px] rounded-[100%] bg-[#2D2D2D]'></span>
@@ -136,7 +136,7 @@ const invoice = () => {
                         <div className='flex items-center'>
                             <img className='h-9 w-9 mr-[10px] rounded-[4px]' src='/images/user3.png'/>
                             <div>
-                                <p className='text-text-black'>Harry Joe</p>
+                                <p className='text-white font-[500]'>Harry Joe</p>
                                 <span className=''>Harry25Joe@gmail.com</span>
                             </div>
                         </div>
@@ -145,15 +145,15 @@ const invoice = () => {
                         </IconCard>
                     </div>
                     <div className='mb-[18px]'>
-                        <p className='text-text-black'>Manchester city, Denmark</p>
+                        <p className=''>Manchester city, Denmark</p>
                         <span className=''>9 Acacia Drive Rome, NY 13440, USA</span>
                     </div>
                     <OutlineButton className="w-full">Add Customer</OutlineButton>
                 </Card>
 
-                <Card className="bg-white">
+                <Card className="border-0">
                     <div className='flex items-center justify-between mb-[27px] '>
-                        <h4 className='inv-h4'>Amount Due <span>(USD)</span></h4>
+                        <p className='text-white'>Amount Due <span>(USD)</span></p>
                         <div className='flex flex-col space-y-[2px]'>
                             <span className='h-[3px] w-[3px] rounded-[100%] bg-[#2D2D2D]'></span>
                             <span className='h-[3px] w-[3px] rounded-[100%] bg-[#2D2D2D]'></span>
@@ -161,22 +161,22 @@ const invoice = () => {
                         </div>
                     </div>
                     <div className='flex items-center mb-[23px] space-x-[7px]'>
-                        <h1 className='font-[700] text-[32px] leading-[45px]'>$3500.00</h1>
-                        <span className='font-[500] text-[16px] leading-[34px]'>(Tax Lncl.)</span>
+                        <h2 className="text-4xl text-primary">$3500.00</h2>
+                        <span className=''>(Tax Incl.)</span>
                     </div>
                     <p className='mb-[27px]'>Due on Dec 25, 2022</p>
                     <div className='flex items-center justify-between'>
-                        <h4 className='inv-h4'>Also attach pdf in mail</h4>
+                        <p className='text-white'>Also attach pdf in mail</p>
                         <SwitchBtn selected={false} />
                     </div>
                 </Card>
 
-                <Card className="flex flex-col gap-y-[30px] pt-[40px]">
+                <Card className="flex flex-col gap-y-[30px] pt-[40px] border-0">
                     <FilledButton className='w-full'>Send invoice</FilledButton>
                     <OutlineButton className='w-full'>Download</OutlineButton>
                     <div className='flex justify-between'>
-                        <p className='text-primary'>Preview invoice</p>
-                        <p className='text-primary'>Save invoice</p>
+                        <p className='hover:text-primary cursor-pointer transition-all duration-300'>Preview invoice</p>
+                        <p className='hover:text-primary cursor-pointer transition-all duration-300'>Save invoice</p>
                     </div>
                 </Card>
             </div>

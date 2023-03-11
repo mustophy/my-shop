@@ -52,7 +52,7 @@ const CustomLineChart = () => {
       <LineChart >
         <XAxis /> 
         <YAxis /> 
-        <Line data={data} type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} dot={false} />
+        <Line data={data} type="monotone" dataKey="pv" stroke="#F3A522" strokeWidth={2} dot={false} />
       </LineChart>
     </ResponsiveContainer>
   );

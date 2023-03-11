@@ -5,7 +5,7 @@ import React from 'react'
 
 const billing = () => {
     return (
-        <div className='flex gap-x-10 h-full p-4 sm:p-[30px] bg-white'>
+        <div className='flex gap-x-10 h-full p-4 sm:p-[30px] bg-surface-gray'>
             <div className="w-[262px] hidden sm:block">
                 <div className='relative'>
                     <svg className='absolute text-red-500 top-5 left-4' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ const billing = () => {
                     <svg className='absolute top-5 right-4' width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.99922 0.125C6.47422 0.125 4.45234 1.41875 2.98047 2.95859C1.51797 4.48438 0.539844 6.3125 0.0773437 7.56758C-0.0257813 7.84531 -0.0257813 8.15469 0.0773437 8.43242C0.539844 9.6875 1.51797 11.5156 2.98047 13.0414C4.45234 14.5813 6.47422 15.875 8.99922 15.875C11.5242 15.875 13.5461 14.5813 15.018 13.0414C16.4805 11.5121 17.4586 9.6875 17.9242 8.43242C18.0273 8.15469 18.0273 7.84531 17.9242 7.56758C17.4586 6.3125 16.4805 4.48438 15.018 2.95859C13.5461 1.41875 11.5242 0.125 8.99922 0.125ZM13.4992 8C13.4992 10.7949 11.4836 13.0625 8.99922 13.0625C6.51484 13.0625 4.49922 10.7949 4.49922 8C4.49922 5.20508 6.51484 2.9375 8.99922 2.9375C11.4836 2.9375 13.4992 5.20508 13.4992 8ZM8.99922 5.75C8.99922 6.99102 8.10234 8 6.99922 8C6.63984 8 6.30234 7.89453 6.01172 7.70469C6.00547 7.80313 5.99922 7.89805 5.99922 8C5.99922 9.86328 7.34297 11.375 8.99922 11.375C10.6555 11.375 11.9992 9.86328 11.9992 8C11.9992 6.13672 10.6555 4.625 8.99922 4.625C8.91172 4.625 8.82422 4.62852 8.73672 4.63906C8.90234 4.96602 8.99922 5.3457 8.99922 5.75Z" fill="#727272" />
                     </svg>
-                    <input type="text" className='py-[14px] w-full pl-12 border border-surface-border pr-6 rounded-lg bg-surface-background' placeholder='Search specific info' />
+                    <input type="text" className='py-[14px] w-full pl-12 pr-6 rounded-lg bg-surface-background' placeholder='Search specific info' />
                     <div className="flex items-center mt-[22px] pb-4 border-b border-surface-border gap-x-4">
                         <img src="/assets/pin.svg" alt="" />
                         <span>PINNED</span>
@@ -37,12 +37,12 @@ const billing = () => {
                 <div className=''>
                     <TitleCard title="My Address" subtitle="Add new address" className="px-3">
                         <div className='grid sm:grid-cols-2 gap-y-[30px] gap-[30px]'>
-                            <Card outline={true}>
+                            <Card className="bg-surface-background border-0" outline={true}>
                                 <h2 className=''>Address 1</h2>
                                 <span className='block mt-3 mb-4'>45 Roker TerraceLatheronwheelKW5 8NW, London</span>
                                 <p className='text-primary'>Edit address</p>
                             </Card>
-                            <Card>
+                            <Card className="border-0 bg-surface-background">
                                 <h2 className=''>Address 2</h2>
                                 <span className='block mt-3 mb-4'>45 Roker TerraceLatheronwheelKW5 8NW, London</span>
                                 <p className='text-primary'>Edit address</p>
@@ -57,7 +57,7 @@ const billing = () => {
                     <div className='mt-[30px]'></div>
                     <TitleCard title="Payment Method" subtitle="Add new method">
                         <div className='grid sm:grid-cols-2 gap-[30px]'>
-                            <Card outline={true}>
+                            <Card className="border-0 bg-surface-background" outline={true}>
                                 <img src="/assets/delete.svg" className='absolute top-8 right-5 cursor-pointer' alt="" />
                                 <h2 className=''>Master Card</h2>
                                 <span className='block mt-3 mb-2 text-sm'>Master 1234 *** 58383 </span>
@@ -67,7 +67,7 @@ const billing = () => {
                                     <img src="/images/mastercard.png" alt="" />
                                 </div>
                             </Card>
-                            <Card>
+                            <Card className="bg-surface-background border-0">
                                 <img src="/assets/delete.svg" className='absolute top-8 right-5 cursor-pointer' alt="" />
                                 <h2 className=''>Visa </h2>
                                 <span className='block mt-3 mb-2 text-sm'>Visa 1234 *** 58383 </span>
@@ -83,11 +83,11 @@ const billing = () => {
                     <div className='mt-[30px]'></div>
                     <TitleCard title="Order History">
                         <div className="grid grid-cols-4 sm:grid-cols-5 mb-4">
-                            <p className='text-black sm:font-semibold text-lg'>Date</p>
-                            <p className='text-black sm:font-semibold text-lg'>Order No</p>
-                            <p className='hidden sm:block text-black sm:font-semibold text-lg'>Invoice</p>
-                            <p className='text-black sm:font-semibold text-lg'>Amount</p>
-                            <p className='text-black sm:font-semibold text-lg'>Status</p>
+                            <p className='text-white sm:font-semibold text-lg'>Date</p>
+                            <p className='text-white sm:font-semibold text-lg'>Order No</p>
+                            <p className='hidden sm:block text-white sm:font-semibold text-lg'>Invoice</p>
+                            <p className='text-white sm:font-semibold text-lg'>Amount</p>
+                            <p className='text-white sm:font-semibold text-lg'>Status</p>
                         </div>
                         {[0, 1, 1, 1].map(a => (
                             <div className="grid grid-cols-4 sm:grid-cols-5 py-6">

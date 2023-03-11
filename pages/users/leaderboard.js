@@ -4,7 +4,7 @@ import React from 'react'
 const leaderboard = () => {
   return (
     <section className='sm:p-[30px]'>
-        <div className='shadow-shadow1 rounded-[8px] bg-white overflow-hidden pb-1'>
+        <div className='shadow-shadow1 rounded-[8px] bg-surface-gray overflow-hidden pb-1'>
             <div className='grid grid-cols-4 sm:grid-cols-6 rounded-tr-[8px] rounded-tl-[8px] bg-surface-background p-4 sm:py-[24px] sm:px-[30px]'>
                 <h2 className='col-span-2 sm:col-span-1'>Name</h2>
                 <h2 className='hidden sm:block'>Issue open</h2>

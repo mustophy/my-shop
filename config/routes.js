@@ -10,10 +10,10 @@ export const sidebarRoutes = [
     {
         name: 'Users',
         subRoutes: [
-            {
-                name: 'Overview',
-                url: '/users/overview'
-            },
+            // {
+            //     name: 'Overview',
+            //     url: '/users/overview'
+            // },
             {
                 name: 'Leaderboard',
                 url: '/users/leaderboard'
@@ -27,10 +27,10 @@ export const sidebarRoutes = [
     {
         name: 'User Profile',
         subRoutes: [
-            {
-                name: 'Profile',
-                url: '/user-profile/profile'
-            },
+            // {
+            //     name: 'Profile',
+            //     url: '/user-profile/profile'
+            // },
             {
                 name: 'Teams',
                 url: '/user-profile/teams'
@@ -65,10 +65,10 @@ export const sidebarRoutes = [
     {
         name: 'E-commerce',
         subRoutes: [
-            {
-                name: 'Overview',
-                url: '/e-commerce/overview'
-            },
+            // {
+            //     name: 'Overview',
+            //     url: '/e-commerce/overview'
+            // },
             {
                 name: 'Products',
                 subRoutes: [
@@ -93,10 +93,10 @@ export const sidebarRoutes = [
                         name: 'Order Details',
                         url: '/e-commerce/orders/order-details/'
                     },
-                    {
-                        name: 'Add order',
-                        url: '/e-commerce/orders/add-order/'
-                    }
+                    // {
+                    //     name: 'Add order',
+                    //     url: '/e-commerce/orders/add-order/'
+                    // }
                 ]
             },
             {
@@ -106,20 +106,20 @@ export const sidebarRoutes = [
                         name: 'Customers',
                         url: '/e-commerce/customers'
                     },
-                    {
-                        name: 'Customer details',
-                        url: '/e-commerce/customers/customer-details'
-                    },
-                    {
-                        name: 'Add Customer',
-                        url: '/e-commerce/add-customer'
-                    }
+                    // {
+                    //     name: 'Customer details',
+                    //     url: '/e-commerce/customers/customer-details'
+                    // },
+                    // {
+                    //     name: 'Add Customer',
+                    //     url: '/e-commerce/add-customer'
+                    // }
                 ]
             },
-            {
-                name: 'Checkout',
-                url: 'e-commerce/checkout'
-            }
+            // {
+            //     name: 'Checkout',
+            //     url: 'e-commerce/checkout'
+            // }
         ]
     },
     {
@@ -131,10 +131,10 @@ export const sidebarRoutes = [
             }
         ]
     },
-    {
-        name: 'Authentication',
-        subRoutes: []
-    },
+    // {
+    //     name: 'Authentication',
+    //     subRoutes: []
+    // },
     {
         name: 'Calendar',
         url: '/calendar'

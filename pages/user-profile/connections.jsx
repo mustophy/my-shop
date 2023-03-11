@@ -3,12 +3,12 @@ import { ConnectionCard, TitleCard } from "@/components/ui/Cards"
 import connectionData from "@/data/users.json"
 const connections = () => {
     return (
-        <div className=' p-5 sm:p-[30px] bg-white'>
+        <div className=' p-5 sm:p-[30px] bg-surface-gray'>
             <div className="sm:flex mb-[30px]">
                 <div className="flex">
                 <Avatar src="/images/user.png" />
                 <div className='ml-3'>
-                    <p className="text-text-black">Mark David</p>
+                    <p className="font-semibold text-white">Mark David</p>
                     <span>markdavid@gmail.com</span>
                 </div>
                 </div>
@@ -18,7 +18,7 @@ const connections = () => {
                 </div>
             </div>
             <TitleCard title="Connections" subtitle="Connect +">
-                <div className="grid sm:grid-cols-4 gap-[30px]">
+                <div className="grid sm:grid-cols-4 px-4 gap-[30px] ">
                     {connectionData.map(user => (
                         <ConnectionCard user={user}/>
                     ))}

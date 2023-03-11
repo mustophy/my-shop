@@ -6,11 +6,11 @@ import projectData from '@/data/projects.json'
 const teams = () => {
   console.log('hey', projectData)
   return (
-    <div className='p-4 sm:p-[30px] bg-white'>
+    <div className='p-3 sm:p-[30px] bg-surface-gray'>
       <div className="flex mb-[30px]">
         <Avatar src="/images/user.png" />
         <div className='ml-3'>
-          <p>Mark David</p>
+          <p className='text-white font-semibold'>Mark David</p>
           <span>markdavid@gmail.com</span>
         </div>
         <div className="hidden sm:flex items-center ml-auto mb-[30px]">

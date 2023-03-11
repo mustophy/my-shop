@@ -13,7 +13,7 @@ export const usersProfile = [
         hours: 10,
         orders: 3,
         totalSpent: "3,456",
-        imageUrl: ""
+        imageUrl: "/images/user.png"
     },
     {
         name: "Herry Smith",
@@ -29,7 +29,7 @@ export const usersProfile = [
         hours: 10,
         orders: 9,
         totalSpent: "71,456",
-        imageUrl: ""
+        imageUrl: "/images/user1.png"
     },
     {
         name: "Zack xinfy",
@@ -45,7 +45,7 @@ export const usersProfile = [
         hours: 10,
         orders: 5,
         totalSpent: "6,456",
-        imageUrl: ""
+        imageUrl: "/images/user2.png"
     },
     {
         name: "Williom son",
@@ -61,7 +61,7 @@ export const usersProfile = [
         hours: 10,
         orders: 3,
         totalSpent: "3,456",
-        imageUrl: ""
+        imageUrl: "/images/user3.png"
     },
     {
         name: "Herry Smith",
@@ -77,7 +77,7 @@ export const usersProfile = [
         hours: 10,
         orders: 9,
         totalSpent: "71,456",
-        imageUrl: ""
+        imageUrl: "/images/user4.png"
     },
     {
         name: "Zack xinfy",
@@ -93,7 +93,7 @@ export const usersProfile = [
         hours: 10,
         orders: 5,
         totalSpent: "6,456",
-        imageUrl: ""
+        imageUrl: "/images/user1.png"
     },
     {
         name: "Williom son",
@@ -109,7 +109,7 @@ export const usersProfile = [
         hours: 10,
         orders: 3,
         totalSpent: "3,456",
-        imageUrl: ""
+        imageUrl: "/images/user3.png"
     },
     {
         name: "Herry Smith",
@@ -125,7 +125,7 @@ export const usersProfile = [
         hours: 10,
         orders: 9,
         totalSpent: "71,456",
-        imageUrl: ""
+        imageUrl: "/images/user2.png"
     },
     {
         name: "Zack xinfy",
@@ -141,6 +141,6 @@ export const usersProfile = [
         hours: 10,
         orders: 5,
         totalSpent: "6,456",
-        imageUrl: ""
+        imageUrl: "/images/user4.png"
     },
 ]

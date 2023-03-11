@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#439FBD',
+        primary: '#E8565B',
         secondary: '#F3A522',
         'input-bg': '#F9F8F9',
         text: {
@@ -21,9 +21,10 @@ module.exports = {
         },
         surface: {
           'white': '#FFFFFF',
-          'background': '#FFF5FA',
+          'background': '#181618',
           'accent': '#F6F7FA',
-          'border': '#DDE2E8'
+          'border': '#DDE2E8',
+          gray: '#282729'
         },
         success: '#4DF285',
         danger: '#CB0A0A',

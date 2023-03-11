@@ -5,7 +5,7 @@ export const FilledButton = ({children, className}) => {
 }
 
 export const OutlineButton = ({children, className}) => {
-    return <button className={`border border-primary rounded-lg hover:bg-white/95 hover:shadow-lg hover:text-[16px] hover:shadow-primary/25 transition-all duration-200 text-primary flex items-center justify-center py-3 px-14 ${className}`}>
+    return <button className={`border border-primary rounded-lg hover:bg-white/55 hover:shadow-lg hover:text-[16px] hover:shadow-primary/25 hover:border-0 hover:font-semibold transition-all duration-200 text-primary flex items-center justify-center py-3 px-14 ${className}`}>
         {children}
     </button>
 }

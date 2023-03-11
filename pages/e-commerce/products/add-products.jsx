@@ -5,8 +5,8 @@ import { SelectInput } from "@/components/ui/SelectInput"
 import { TextInput } from "@/components/ui/TextInput"
 const AddProducts = () => {
     return (
-        <div className='bg-white p-4 sm:p-[30px] rounded-lg'>
-            <Card>
+        <div className='bg-surface-gray p-4 sm:p-[30px] rounded-lg'>
+            <Card className="border-0 bg-surface-background">
                 <p>Products / <span className="text-primary">Add products</span></p>
                 <div className="flex justify-between items-center">
                     <h2 className="mt-[18px] text-3xl">Tiro track jacket</h2>
@@ -25,19 +25,19 @@ const AddProducts = () => {
             <div className="mt-[30px] sm:grid grid-cols-3 gap-x-[35px]">
                 <div className="col-span-2 grid gap-y-[30px]">
                     <TitleCard title="Product Information">
-                        <div className="grid grid-cols-2 gap-x-4">
+                        <div className=" sm:px-0 grid sm:grid-cols-2 gap-x-4">
                             <TextInput label="Name" />
                             <TextInput label="SKU" />
                         </div>
                     </TitleCard>
                     <TitleCard title="Media" subtitle="Add Media From URL">
-                        <div className="h-[225px] flex flex-col items-center justify-center bg-surface-accent rounded-lg">
+                        <div className="h-[225px] px-8 sm:px-0 flex flex-col items-center justify-center bg-surface-background rounded-lg">
                             <p className="mb-5">Drag and drop your file here</p>
                             <OutlineButton>Browse Files</OutlineButton>
                         </div>
                     </TitleCard>
                     <TitleCard title="Variants">
-                        <div className="flex gap-x-4">
+                        <div className="flex items-center gap-x-4">
                             <IconCard>
                                 <img src="/assets/camera.svg" alt="" />
                             </IconCard>
@@ -47,8 +47,8 @@ const AddProducts = () => {
                         </div>
                     </TitleCard>
                 </div>
-                <div className=" flex flex-col gap-y-[30px]">
-                    <TitleCard title="Pricing" className="px-6 py-4">
+                <div className="mt-6 sm:mt-0 flex flex-col gap-y-[30px]">
+                    <TitleCard title="Pricing" className=" py-4">
                         <TextInput label="Price" className="-mt-4"/>
                         <div className="flex flex-col gap-y-4 mt-5">
                             <div className="flex gap-x-4">
@@ -60,9 +60,9 @@ const AddProducts = () => {
                                 <span>Bulk discount Pricing</span>
                             </div>
                         </div>
-                        <p className="text-black font-semibold pt-4 border-t mt-6">Availability: Yes</p>
+                        <p className="text-white font-semibold pt-4 border-t mt-6">Availability: Yes</p>
                     </TitleCard>
-                    <TitleCard title="Organization" className="px-6 py-4">
+                    <TitleCard title="Organization" className=" py-4">
                         <TextInput label="Vendor" className="-mt-4"/>
                         <SelectInput className="mt-[30px]" label="Category" placeholder="Clothing">
                             <option value="Clothing">Clothing</option>

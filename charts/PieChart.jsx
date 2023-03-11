@@ -3,10 +3,10 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
 
 export const CustomPieChart = ({ width = 100, inner, outer }) => {
     const data = [
-        { name: "Group B", value: 300 },
+        { name: "Group B", value: 900 },
         { name: "Group A", value: 400 },
     ];
-    const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+    const COLORS = ["#E8565B", "#F3A522", "#F3A522", "#F3A522"];
     return (
         <ResponsiveContainer height="100%">
             <PieChart>
@@ -15,11 +15,12 @@ export const CustomPieChart = ({ width = 100, inner, outer }) => {
                     innerRadius={inner}
                     outerRadius={outer}
                     fill="none"
+                    enableBackground={false}
                     paddingAngle={undefined}
                     dataKey="value"
                 >
                     {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} className="outline-none border-0 stroke-none"/>
                     ))}
                 </Pie>
             </PieChart>

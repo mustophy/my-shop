@@ -7,16 +7,16 @@ import React from 'react'
 
 const Overview = () => {
     return (
-        <section className='bg-white pb-[30px]'>
+        <section className='bg-surface-gray pb-[30px]'>
             <FilledButton>
                 Add User
             </FilledButton>
 
-            <div className='sm:flex justify-between my-[30px]'>
-                <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
+            <div className='sm:flex justify-between m-[30px]'>
+                <div className='shadow-shadow1 bg-surface-background rounded-[8px] w-fit flex justify-between items-center p-5'>
                     <div className='mr-[90px]'>
-                        <h2 className=''>Total Users</h2>
-                        <span className='font-bold text-[24px] text-primary leading-[31px] '>50</span>
+                        <h2 className='text-white'>Total Users</h2>
+                        <span className=' block my-3 text-[28px] font-semibold text-primary leading-[31px] '>50</span>
                         <p className='text-[12px] leading-[16px] '>from 45</p>
                     </div>
                     <div className='w-[55px] h-[55px] '>
@@ -27,37 +27,6 @@ const Overview = () => {
                           value="60" 
                           text='60%'
                         /> */}
-                    </div>
-                </div>
-
-                <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
-                    <div className='mr-[90px]'>
-                        <h4 className='inv-h4'>Active Members</h4>
-                        <span className='font-bold text-[24px] text-primary leading-[31px] '>25</span>
-                        <p className='text-[12px] leading-[16px] '>from 45</p>
-                    </div>
-                    <div className='w-[55px] h-[55px] '>
-                        {/* <CircularProgressbar value="80" text='80%'/> */}
-                    </div>
-                </div>
-                <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
-                    <div className='mr-[90px]'>
-                        <h4 className='inv-h4'>New Returning</h4>
-                        <span className='font-bold text-[24px] text-primary leading-[31px] '>56</span>
-                        <p className='text-[12px] leading-[16px] '>from 45</p>
-                    </div>
-                    <div className='w-[55px] h-[55px] '>
-                        {/* <CircularProgressbar value="90" text='90%'/> */}
-                    </div>
-                </div>
-                <div className='shadow-shadow1 rounded-[8px] w-fit flex justify-between items-center p-5'>
-                    <div className='mr-[90px]'>
-                        <h4 className='inv-h4'>Active Members</h4>
-                        <span className='font-bold text-[24px] text-primary leading-[31px] '>40</span>
-                        <p className='text-[12px] leading-[16px] '>from 45</p>
-                    </div>
-                    <div className='w-[55px] h-[55px] '>
-                        {/* <CircularProgressbar value="55" text='55%'/> */}
                     </div>
                 </div>
             </div>

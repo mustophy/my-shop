@@ -4,11 +4,11 @@ import projectData from '@/data/projects.json'
 
 const projects = () => {
   return (
-    <div className=' p-5 sm:p-[30px] bg-white'>
+    <div className=' p-5 sm:p-[30px] bg-surface-gray'>
       <div className="flex mb-[30px]">
         <Avatar src="/images/user.png" />
         <div className='ml-3'>
-          <p className='text-text-black'>Mark David</p>
+          <p className='text-white font-semibold'>Mark David</p>
           <span>markdavid@gmail.com</span>
         </div>
         <div className="hidden sm:flex items-center ml-auto mb-[30px]">
@@ -17,15 +17,15 @@ const projects = () => {
         </div>
       </div>
       <TitleCard title="Projects" subtitle="Connect +">
-        <div className="grid sm:grid-cols-3 gap-x-[30px]">
-          <ProjectSectionCard title="To Do Tasks">
+        <div className="grid sm:grid-cols-3 gap-[30px]">
+          <ProjectSectionCard title="To Do Tasks" outline={true} outlineColor="#E95F8B">
             <div className="grid gap-y-5 mt-5">
               {projectData.map(project => (
                 <ProjectCard project={project} />
               ))}
             </div>
           </ProjectSectionCard>
-          <ProjectSectionCard title="In Progress">
+          <ProjectSectionCard title="In Progress" outline={true} outlineColor='#FB1DF2'>
             <div className="grid gap-y-5 mt-5">
               {projectData.map((project, index) => (
                 <>
@@ -36,7 +36,7 @@ const projects = () => {
               ))}
             </div>
           </ProjectSectionCard>
-          <ProjectSectionCard title="Completed">
+          <ProjectSectionCard title="Completed" outline={true} outlineColor="#F6B445">
             <div className="grid gap-y-5 mt-5">
               {projectData.map((project, index) => (
                 <>
